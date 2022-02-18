@@ -119,7 +119,7 @@ function ingresarLetra(){
 	document.querySelector("#nueva-letra").value=letrasDigitadas;
 	console.log(letrasDigitadas);
 }
-letrasDigitadas=;
+
 //letrasDigitadas=ingresarLetra();
 console.log(letrasDigitadas);
 
