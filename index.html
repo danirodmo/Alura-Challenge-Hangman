@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ahorcado</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div style="text-align:center; margin: 50px 0px;">
+      <h1 class="titulo">Ahorcado</h1>
+      <button class="btn" id="iniciar-juego" onclick="iniciarJuego()" >INICIAR JUEGO </button>
+    </div>
+    <div style="text-align:center">
+      <input class="text-input" autofocus type="text" id="input-nueva-palabra" placeholder="Escriba una nueva palabra" style="text-align:center">
+      <button class="btn" id="nueva-palabra" onclick="agregarPalabra()">AGREGAR PALABRA</button> 
+    </div>
+    <div style="text-align:center;">
+      <canvas id="ahorcado" height="800px" width="1200px"></canvas>
+    </div>
+    <script>
+      var color="darkblue";
+      var palabras=["HOLOCAUSTO","ARRUINAR","GENERICO","AHORCADO","DESARROLLADOR","AUDACES","SUGERENCIA","GIRASOL","SOYA","MURCIELAGO","ARBITRARIO","RUIN","COSTOSO","LAPIZ","EDUCADO","LINTERNA","ALTERNO","IDOLO","FRAMBUESA","CEREZA","CERTEZA","WHISKY","CULEBRA","BIZCOCHO","DANZA","BAILE","FRIGORIFICO","ACEITE","PALMA","PALMERA","PLAYA","TURISTA"]
+      var palabraElegida;
+      var deletreo;
+    </script>
+    <script type="text/javascript" src="ahorcado.js"></script>
+    <script type="text/javascript" src="canvas.js"></script>
+  </body>
+</html>
